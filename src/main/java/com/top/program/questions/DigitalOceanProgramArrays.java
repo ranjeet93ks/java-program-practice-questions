@@ -3,6 +3,7 @@ package com.top.program.questions;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Optional;
+import java.util.Random;
 
 public class DigitalOceanProgramArrays {
 
@@ -15,6 +16,7 @@ public class DigitalOceanProgramArrays {
 		System.out.println(findSecondlargest(new int[] { 1, 7, 5, 3, 9, 4, 0, 2, 6 }));// 7
 		System.out.println(findSecondHighest(new int[] { 1, 7, 5, 3, 9, 4, 0, 2, 6 }));// 7
 		System.out.println(findHighest(new int[] { 1, 7, 5, 3, 9, 4, 0, 2, 6 }));// 9
+		shuffleArray();
 
 	}
 
@@ -88,6 +90,23 @@ public class DigitalOceanProgramArrays {
 
 		}
 		return highest;
+	}
+
+	// shuffle an array
+	public static void shuffleArray() {
+		int[] array = { 1, 2, 3, 4, 5, 6, 7 };
+		System.out.println("before shuffle : " + Arrays.toString(array));
+
+		Random rand = new Random();
+		int length = array.length;
+		for (int i = 0; i < length; i++) {
+			int randomIndexToSwap = rand.nextInt(length);
+			int temp = array[randomIndexToSwap];
+			array[randomIndexToSwap] = array[i];
+			array[i] = temp;
+		}
+
+		System.out.println("after shuffle : " + Arrays.toString(array));
 	}
 
 }
