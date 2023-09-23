@@ -1,4 +1,4 @@
-package com.top.program.questions;
+package com.top.program.questions.digocn;
 
 import java.util.HashMap;
 import java.util.Map;

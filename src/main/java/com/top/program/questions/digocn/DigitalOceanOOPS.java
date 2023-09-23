@@ -1,4 +1,4 @@
-package com.top.program.questions;
+package com.top.program.questions.digocn;
 
 public class DigitalOceanOOPS {
 
@@ -21,8 +21,8 @@ class ChildB extends Parent {
 
 }
 
-class grandChild extends ChildA, ChildB{//compilation error
-	
-}
+//class grandChild extends ChildA, ChildB{//compilation error
+//	
+//}
 
 //
